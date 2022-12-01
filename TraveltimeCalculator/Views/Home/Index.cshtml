@@ -1,0 +1,25 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+@model IndexModel
+   <div class="text-center">
+
+    @using (Html.BeginForm("Index", "Home", FormMethod.Post))
+    {
+        <table cellpadding="0" cellspacing="0">
+            <tr>
+                <td>
+                    <label>From Home to work?(Uncheck if from work to home)</label>
+                    @Html.CheckBoxFor(m => m.IsFromHome);
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><input type="submit" value="CHECK TRAVEL TIME" /></td>
+            </tr>
+        </table>
+    }
+    <h4>Send status: @if (Model.IsSuccessful) {<a>Successful</a>} else { <a>Failed</a>}</h4>
+</div>
+
