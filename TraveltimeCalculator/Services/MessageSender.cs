@@ -10,7 +10,7 @@ namespace TraveltimeCalculator.Services
     public class MessageSender : IMessageSender
     {   
         private ServiceBusSender sbsender;
-        // number of messages to be sent to the queue
+        // number of retries for sending messages to the queue
         private const int numOfRetries = 3;
 
         public MessageSender(ServiceBusSender sbsender)
