@@ -9,4 +9,5 @@ Simple Workflow chart
 UI &rarr; send request to service bus &rarr; azure function app process the request &rarr; fetch travel time from google api/ azure map api &rarr; logic app &rarr; send myself a email
 
 
-![image](https://user-images.githubusercontent.com/3876170/205246797-0b4fa4c6-ba16-4657-b688-b6164616f99b.png)
+![image](https://user-images.githubusercontent.com/3876170/205246940-a0f9dee0-df9e-49fc-ba00-4dd44d657146.png)
+
